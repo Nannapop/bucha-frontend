@@ -1,5 +1,5 @@
 import React from "react";
-import "./BuchaMap.css";
+import "./Buchamap.css";
 import Title from "../Title/Title";
 
 const BuchaMap = () => {
