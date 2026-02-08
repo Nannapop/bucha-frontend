@@ -30,7 +30,7 @@ import ProtectedRoute from "./Components/Routeprotect/Routeprotect";
 import Editservices from "./pages/Editservices";
 import Editcompany from "./pages/Editcompany";
 
-import "./pages/Login.css";
+import "./pages/login.css";
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(null);
