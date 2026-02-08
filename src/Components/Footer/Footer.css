@@ -1,0 +1,64 @@
+.footer {
+  padding: 20px 10%;
+  background-color: #000F38;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #000000;
+}
+
+/* ฝั่งซ้ายโลโก้ + ข้อความ */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.footer p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 25px;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 5%;
+  }
+
+  .footer-left {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer ul li {
+    margin: 10px;
+  }
+
+  .footer ul {
+    margin-top: 10px;
+  }
+}

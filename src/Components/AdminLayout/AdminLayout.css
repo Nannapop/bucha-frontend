@@ -1,0 +1,39 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden; /* กันล้นจอ */
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;     
+  background: #0d47a1;
+  color: white;
+  z-index: 1000;
+}
+
+.admin-content {
+  flex: 1;
+  margin-left: 220px;  
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: auto;    
+}
+
+
+
+@media (max-width: 840px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .admin-content {
+    margin-left: 200px; 
+  }
+}

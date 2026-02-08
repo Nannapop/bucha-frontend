@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn{
+  background: #ffffff;
+  color: #212121;
+  padding: 14px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.btn.dark-btn{
+  background: #212EA0;
+  color: #ffffff;
+}
+
+.btn {
+  background: #ffffff;
+  color: #212121;
+  padding: 14px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;     /* เพิ่ม transition */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);  /* เพิ่มเงาเบาๆ */
+}
+
+/* Hover ปุ่มขาว */
+.btn:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ปุ่มสีน้ำเงิน */
+.btn.dark-btn {
+  background: #212EA0;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(33, 46, 160, 0.25);
+}
+
+/* Hover ปุ่มสีน้ำเงิน */
+.btn.dark-btn:hover {
+  background: #1a238f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(33, 46, 160, 0.4);
+}
+
+/* พื้นหลังเคลื่อนไหวแบบ responsive */
+.mouse-bg {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #cfe4ff, #eaf2ff 70%);
+  z-index: -1;
+  transition: background-position 0.15s ease-out;
+}
+
+@media (max-width: 1200px) {
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
+}

@@ -1,0 +1,59 @@
+.summary-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.sum-container{
+    background: url('../../assets/all-bg.png')no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* วงกลมเปอร์เซ็น */
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke: #0d47a1;
+  animation: progress 1.2s ease-out forwards;
+  pointer-events: none;
+}
+.percentage {
+  fill: #0d47a1;
+  font-size: 0.5em;
+  text-anchor: middle;
+  font-weight: bold;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}

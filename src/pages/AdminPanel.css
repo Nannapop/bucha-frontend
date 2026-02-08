@@ -1,0 +1,59 @@
+.admin-panel {
+  padding: 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212EA0;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.admin-header h2 {
+  margin: 0;
+}
+
+.logout-btn {
+  background: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #b52a37;
+}
+
+.intro-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.admin-grid {
+  display: flex;
+  flex-direction: column; /* เรียงแนวตั้ง */
+  gap: 15px;
+}
+
+.admin-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card h3 {
+  margin: 0 0 8px 0;
+  color: #212EA0;
+}

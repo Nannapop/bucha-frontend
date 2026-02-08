@@ -1,0 +1,21 @@
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #0d47a1, #2598f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title h1 {
+  font-size: 32px;
+  margin-top: 5px;
+  text-transform: none;
+  background: linear-gradient(90deg, #000F38, #0d47a1, #42a5f5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}

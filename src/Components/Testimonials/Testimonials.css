@@ -1,0 +1,162 @@
+.testimonials{
+    margin: 50px auto;
+    padding: 0 80px;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tes-container{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: url('../../assets/all-bg.png')no-repeat center center;
+    background-size: cover;
+}
+
+.next-btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #212EA0;
+    color: #212121;
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.back-btn{
+    left: 0;
+    right: auto;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    flex: 0 0 50%;
+    padding: 20px;
+    overflow-wrap: break-word;
+}
+
+.slide{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;   
+    min-height: 280px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: white;
+
+}
+
+.slide p {
+    margin-top: 10px; 
+    overflow-wrap: break-word;
+}
+
+.slide img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #212EA0;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3{
+    color: #212EA0;
+}
+
+@media (max-width: 800px) {
+    .testimonials{
+        padding: 0 40px;
+    }
+
+    .next-btn, .back-btn{
+        width: 35px;
+        padding: 10px;
+    }
+
+    .testimonials ul li{
+        padding: 10px;
+    }
+
+    .slide{
+        padding: 10px;
+    }
+
+    .slide img{
+        width: 50px;
+        border: 3px solid #212EA0;
+    }
+
+    .user-info h3{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .user-info{
+        display: block;
+        margin-bottom: 10;
+        font-size: 12px;
+    }
+
+    .user-info h3{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .slider p{
+        font-size: 12px;
+    }
+}
+
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #212EA0;
+  color: #fff;
+  padding: 15px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(33, 46, 160, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* ✅ Hover Effect */
+.next-btn:hover,
+.back-btn:hover {
+  background: #1a238f; /* สีเข้มขึ้นเล็กน้อย */
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 8px 20px rgba(33, 46, 160, 0.5);
+}

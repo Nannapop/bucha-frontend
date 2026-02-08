@@ -1,0 +1,150 @@
+.footer2 {
+  background: linear-gradient(0deg, #000F38, #0d47a1, #42a5f5);
+  color: #fff;
+  padding: 60px 5% 60px;
+  font-family: "Prompt", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  padding: 0 5%;
+}
+.footer2-logo img {
+  margin-top: 50px;
+  width: 190px;
+  height: auto;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
+}
+
+.footer2-connect h3,
+.footer2-menu h3,
+.footer2-qr h3,
+.footer2-fb h3 {
+  color: #ffca28;
+  font-size: 19px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer2-connect p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #eaeaea;
+}
+
+.footer2-connect .phone {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.line-icon {
+  margin-right: 6px;
+  color: #00b900;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.footer2-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer2-menu li {
+  font-size: 15px;
+  color: #d9e4f2;
+  margin: 6px 0;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.footer2-menu li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+/* ✅ QR ขยาย */
+.footer2-qr img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background: white;
+  padding: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.footer2-qr img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Facebook Box ขยาย */
+.footer2-fb .fb-page {
+  width: 100% !important;
+  min-width: 300px;
+  min-height: 250px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Facebook Chat Box container */
+#fb-root {
+  position: relative;
+  z-index: 10;
+}
+
+.fb-customerchat {
+  z-index: 9999;
+}
+
+/* Divider line */
+.footer2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer2-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer2-logo img {
+    margin-bottom: 20px;
+  }
+
+  .footer2-menu ul {
+    display: inline-block;
+  }
+
+  .footer2-qr img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .footer2-fb .fb-page {
+    max-width: 280px;
+    min-height: 280px;
+  }
+
+  .footer2 {
+    padding-bottom: 140px;
+  }
+}

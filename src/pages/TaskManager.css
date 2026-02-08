@@ -1,0 +1,132 @@
+.task-container {
+  width: 100%;
+  padding: 30px 40px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* head */
+.task-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d47a1; 
+  margin-bottom: 20px;
+  border-left: 6px solid #0d47a1;
+  padding-left: 12px;
+}
+
+/* form */
+.task-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.task-form input:focus {
+  outline: none;
+  border-color: #0d47a1;
+  box-shadow: 0 0 4px rgba(13, 71, 161, 0.4);
+}
+
+.task-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0d47a1;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.task-form button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+/* list */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.task-list span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.task-list button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+
+/* ปุ่มเสร็จแล้ว */
+.task-actions .complete-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.task-actions .complete-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* ปุ่มลบ */
+.task-actions .delete-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.task-actions .delete-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}

@@ -1,0 +1,35 @@
+.welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: slideUpFade 3s ease-in-out forwards;
+}
+
+.welcome-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+/* อนิเมชันเลื่อนขึ้น เฟด */
+@keyframes slideUpFade {
+  to {
+    opacity: 0;
+    transform: translateY(-600px);
+    visibility: hidden;
+  }
+}
