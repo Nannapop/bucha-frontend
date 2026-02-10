@@ -25,7 +25,7 @@ const Login = ({ onLoginSuccess }) => {
 
       if (data.success) {
         onLoginSuccess(data.user);
-        navigate("/Admin-panel");
+        navigate("/admin-panel");
       } else {
         setError(data.msg || "เข้าสู่ระบบไม่สำเร็จ");
       }
